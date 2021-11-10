@@ -1,0 +1,150 @@
+/* 500以下の時 */
+
+/* 全体構造 ---------------------------------------------------------------------*/
+@media (max-width:500px) {
+  
+
+    /* レスポンシブデザイン幅調整。横スクロールバーを消す */
+    .content {
+        width: auto;
+    }
+
+    header .inner {
+        width: auto;
+    }
+    main {
+        width: auto;
+    }
+  
+    /* コンテンツ メインとasideの左右配置を取り除く*/
+    .content {
+        display: block;
+    }
+    
+    main .card {
+        display: block;
+        /* 初期値に戻す（横並び戻す） */
+        text-align: center;
+    }
+    main .card img {
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+    main .card .desc {
+      width: auto;   
+      /* 初期値に戻すウィズを取り除く */
+      
+    }
+    main .card h3 {
+       margin: 0 auto;
+    }
+    main .card p {
+     margin: 0 auto;
+    }
+   
+
+    
+
+    /* トップページ専用 ---------------------------------------------------------------------*/
+
+        /* mein */
+        main {
+            margin-bottom: 60px;
+            margin: 10px;
+        }
+
+        #home main h2 {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        
+        #home main p {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+     
+          
+        .others main {
+            
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    /* ------------------
+    ヘッダー
+    ------------------ */
+
+    
+    header nav.pc-nav {
+        display: none;
+    }
+
+    /* ------------------
+    サイド
+    ------------------ */
+
+    aside {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 60px;
+    }
+    /* ------------------
+    フッター
+    ------------------ */
+    /* フッター */
+    footer {
+        text-align: center;
+    }
+
+    footer small br {
+        display: inline;
+        /* スマホでは改行表示してね */
+    }
+
+    /* ハンバーガーメニュー--------------------------------------------------------------------- */
+         /* PC時には非表示 */
+        .hamburger-button {
+        display: flex;
+        }
+
+            
+    .hamburger-button path {
+        fill: rebeccapurple;
+    }
+
+    /* メニューボタン -------------------------------------------------*/
+    .hamburger-button {
+        display: flex;
+        background-color: transparent;　 /* ボタンの背景透明にする */
+        top: 60px;
+        right: 30px;
+    ｝
+   
+
+    /* アイコン */ 
+    .hamburger-button svg {
+        width: 50px;         /* アイコンの大きさ */
+        height: 50px;　    /* アイコンの大きさ */
+        
+     
+    }
+   
+
+    /* ナビゲーション */
+    .hamburger-nav {
+    height: 100%;
+    }
+
+    
+    .hamburger-nav li {
+        padding: 15px;
+        border-bottom: 1px solid #ddd;
+
+    }
+    .hamburger-nav a {
+     
+    }
+
+
+
+
+}
